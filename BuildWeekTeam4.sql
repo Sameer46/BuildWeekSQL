@@ -63,6 +63,7 @@ FOREIGN KEY (IdComune) REFERENCES Comuni (Id) ON DELETE CASCADE)
 CREATE TABLE Macchine (
 Id INT IDENTITY NOT NULL PRIMARY KEY,
 Targa NVARCHAR(150) NOT NULL,
+NumeroSerie NVARCHAR(50)NOT NULL,
 PrezzoListino DECIMAL(10, 2),
 AnnoImmatricolazione DATETIME NOT NULL,
 IdConcessionaria INT NOT NULL,
@@ -83,4 +84,4 @@ IdMacchina INT NOT NULL,
 IdConcessionaria INT NOT NULL,
 FOREIGN KEY (IdCliente) REFERENCES AnagraficaClienti (Id) ON DELETE CASCADE,
 FOREIGN KEY (IdMacchina) REFERENCES Macchine (Id) ON DELETE CASCADE,
-FOREIGN KEY (IdConcessionaria) REFERENCES Concessionarie (Id) ON DELETE CASCADE,)
+FOREIGN KEY (IdConcessionaria) REFERENCES Concessionarie (Id) ON DELETE CASCADE)
