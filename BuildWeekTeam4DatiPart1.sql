@@ -21,7 +21,7 @@ INSERT INTO Comune (Nome, CAP, IDProvincia) VALUES
 INSERT INTO AnagraficaClienti (Nome, Cognome, Indirizzo, Telefono, IDComune) VALUES
 ('Mario', 'Rossi', 'Via Milano 1', '3401234567', 1), ('Luca', 'Verdi', 'Via Bergamo 5', '3402234567', 2),
 ('Anna', 'Bianchi', 'Corso Torino 12', '3403234567', 3), ('Giulia', 'Neri', 'Via Cuneo 8', '3404234567', 4),
-('Marco', 'Gialli', 'Piazza Verona 3', '3405234567', 5), ('Paola', 'Blu', 'Via Venezia 6', '3406234567', 6),
+('Davide', 'Mancino', 'Piazza Verona 3', '3405234567', 5), ('Paola', 'Blu', 'Via Venezia 6', '3406234567', 6),
 ('Giovanni', 'Viola', 'Corso Bologna 9', '3407234567', 7), ('Francesca', 'Grigi', 'Via Modena 11', '3408234567', 8),
 ('Alessandro', 'Marrone', 'Via Firenze 15', '3409234567', 9), ('Sofia', 'Celeste', 'Via Livorno 20', '3410234567', 10),
 ('Simone', 'Arancione', 'Via Genova 7', '3411234567', 11), ('Serena', 'Rosa', 'Via La Spezia 14', '3412234567', 12),
@@ -109,25 +109,25 @@ INSERT INTO Auto (Targa, NumeroSerie, PrezzoListino, AnnoImmatricolazione, Cambi
 ('SS901TT', 'ABCDEF1234567808', 19000.00, '2019-09-25', 'Manuale', 'Diesel', 19, 19, 19),
 ('TT012UU', 'ABCDEF1234567809', 31000.00, '2021-06-10', 'Automatico', 'Ibrido', 20, 20, 20);
 
-INSERT INTO Vendita (IDAuto, PrezzoVendita, DataAcquisto, DataVendita, IDCliente, IDConcessionaria) VALUES
-(1, 14800.00, '2021-05-15', NULL, 1, 1), -- Vendita tra concessionaria e cliente
-(2, 16500.00, NULL, '2022-02-20', 2, NULL), -- Vendita tra privati
-(3, 22000.00, '2020-11-10', NULL, 3, 2),
-(4, 24500.00, NULL, '2021-08-05', 4, NULL),
-(5, 29000.00, '2021-07-12', NULL, 5, 3),
-(6, 16000.00, NULL, '2022-03-10', 6, NULL),
-(7, 26500.00, '2020-06-18', NULL, 7, 4),
-(8, 17500.00, NULL, '2022-01-15', 8, NULL),
-(9, 21000.00, '2021-04-28', NULL, 9, 5),
-(10, 27000.00, NULL, '2022-04-14', 10, NULL),
-(11, 25000.00, '2020-09-15', NULL, 11, 6),
-(12, 22500.00, NULL, '2022-05-22', 12, NULL),
-(13, 18000.00, '2021-03-01', NULL, 13, 7),
-(14, 23000.00, NULL, '2021-10-07', 14, NULL),
-(15, 24000.00, '2020-05-30', NULL, 15, 8),
-(16, 14500.00, NULL, '2021-09-18', 16, NULL),
-(17, 27500.00, '2020-07-20', NULL, 17, 9),
-(18, 21800.00, NULL, '2021-06-15', 18, NULL),
-(19, 18500.00, '2021-01-10', NULL, 19, 10),
-(20, 30500.00, NULL, '2022-07-25', 20, NULL);
 
+INSERT INTO Vendita (IDAuto, PrezzoVendita, DataAcquisto, DataVendita, IDCliente, IDConcessionaria) VALUES
+(1, 14800.00, '2021-05-15', '2021-06-01', 1, 1),
+(2, 16500.00, '2022-01-15', NULL, 2, 1),
+(3, 22000.00, '2020-11-10', '2020-11-25', 3, 2),
+(4, 24500.00, '2021-07-15', NULL, 4, 2),
+(5, 29000.00, '2021-07-12', '2021-07-20', 5, 3),
+(6, 16000.00, '2022-02-10', NULL, 6, 3),
+(7, 26500.00, '2020-06-18', '2020-06-25', 7, 4),
+(8, 17500.00, '2021-12-20', NULL, 8, 4),
+(9, 21000.00, '2021-04-28', '2021-05-05', 9, 5),
+(10, 27000.00, '2022-03-14', NULL, 10, 5),
+(11, 25000.00, '2020-09-15', '2020-09-25', 11, 6),
+(12, 22500.00, '2022-04-10', NULL, 12, 6),
+(13, 18000.00, '2021-02-25', '2021-03-01', 13, 7),
+(14, 23000.00, '2021-09-05', NULL, 14, 7),
+(15, 24000.00, '2020-05-30', '2020-06-10', 15, 8),
+(16, 14500.00, '2021-08-18', NULL, 16, 8),
+(17, 27500.00, '2020-07-20', '2020-07-30', 17, 9),
+(18, 21800.00, '2021-05-15', NULL, 18, 9),
+(19, 18500.00, '2021-01-10', '2021-01-20', 19, 10),
+(20, 30500.00, '2022-06-10', NULL, 20, 10);
