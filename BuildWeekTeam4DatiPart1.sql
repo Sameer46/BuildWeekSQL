@@ -131,3 +131,9 @@ INSERT INTO Vendita (IDAuto, PrezzoVendita, DataAcquisto, DataVendita, IDCliente
 (18, 21800.00, '2021-05-15', NULL, 18, 9),
 (19, 18500.00, '2021-01-10', '2021-01-20', 19, 10),
 (20, 30500.00, '2022-06-10', NULL, 20, 10);
+
+
+INSERT INTO Vendita (IDAuto, PrezzoVendita, DataAcquisto, DataVendita, IDCliente, IDConcessionaria) VALUES
+(20, 40500.00, '2010-06-10', '2022-06-10', 20, 10);
+
+
