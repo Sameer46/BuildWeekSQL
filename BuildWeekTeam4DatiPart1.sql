@@ -137,3 +137,21 @@ INSERT INTO Vendita (IDAuto, PrezzoVendita, DataAcquisto, DataVendita, IDCliente
 (20, 40500.00, '2010-06-10', '2022-06-10', 20, 10);
 
 
+
+INSERT INTO Auto (Targa, NumeroSerie, PrezzoListino, AnnoImmatricolazione, Cambio, Alimentazioni, IDModello, IDColore, IDConcessionaria) VALUES
+('TY012UU', 'ABCDEF1234567810', 32000.00, '2021-06-10', 'Automatico', 'Ibrido', 20, 20, 20);
+
+
+INSERT INTO AnagraficaClienti (Nome, Cognome, Indirizzo, Telefono, IDComune) VALUES
+('Mario', 'Pino', 'Via Milano 1', '3401234567', 1), ('Luca', 'Verdi', 'Via Bergamo 5', '3402234567', 1);
+
+
+INSERT INTO Vendita (IDAuto, PrezzoVendita, DataAcquisto, DataVendita, IDCliente, IDConcessionaria) VALUES
+(1, 7000.00, '2021-06-01', null, 21, 1);
+
+
+INSERT INTO Auto (Targa, NumeroSerie, PrezzoListino, AnnoImmatricolazione, Cambio, Alimentazioni, IDModello, IDColore, IDConcessionaria) VALUES
+('AA123CB', 'ABCDEF1234267890', 15000.00, '2020-01-15', 'Automatica', 'Benzina', 1, 1, 1);
+
+INSERT INTO Vendita (IDAuto, PrezzoVendita, DataAcquisto, DataVendita, IDCliente, IDConcessionaria) VALUES
+(22, 8000.00, '2020-01-15', null, 22, 1);
