@@ -1,5 +1,5 @@
 INSERT INTO Provincia (Nome, IDRegione) VALUES
-('L'Aquila', 1),
+(L'Aquila', 1),
 ('Teramo', 1),
 ('Pescara', 1),
 ('Chieti', 1),
